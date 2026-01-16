@@ -1,0 +1,102 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+/* BODY */
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* COMMON CONTAINER */
+.container {
+    background: #ffffff;
+    width: 350px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* HEADINGS */
+.heading {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* INPUT FIELDS */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+input:focus {
+    border-color: #4facfe;
+}
+
+/* BUTTONS */
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 6px;
+    background: #4facfe;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #3a9dfc;
+}
+
+/* LOGOUT BUTTON */
+button[onclick="logout()"] {
+    background: #ff4d4d;
+}
+
+button[onclick="logout()"]:hover {
+    background: #e60000;
+}
+
+/* EXPENSE LIST */
+ul {
+    list-style: none;
+    margin-top: 15px;
+    padding: 0;
+}
+
+li {
+    background: #f4f6f8;
+    padding: 8px;
+    margin-bottom: 6px;
+    border-radius: 6px;
+    font-size: 14px;
+    text-align: left;
+}
+
+/* TOTAL */
+#totalExpense {
+    margin-top: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* RESPONSIVE */
+@media (max-width: 400px) {
+    .container {
+        width: 90%;
+    }
+}
