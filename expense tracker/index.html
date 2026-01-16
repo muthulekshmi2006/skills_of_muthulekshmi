@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- LOGIN SECTION -->
+    <div class="container login-container" id="loginSection">
+        <h1 class="heading">Expense Tracker</h1>
+
+        <input type="email" id="email" placeholder="Email">
+        <input type="password" id="password" placeholder="Password">
+
+        <button onclick="signup()">Sign Up</button>
+        <button onclick="login()">Login</button>
+    </div>
+
+    <!-- EXPENSE SECTION -->
+    <div class="container expense-container" id="expenseSection" style="display:none;">
+        <h1 class="heading">Add Your Expenses</h1>
+
+        <input type="text" id="title" placeholder="Expense title">
+        <input type="number" id="amount" placeholder="Amount">
+
+        <button onclick="addExpense()">Add Expense</button>
+
+        <ul id="expenseList"></ul>
+        <h3 id="totalExpense">Total: ₹0</h3>
+
+        <button onclick="logout()" style="background:#ff4d4d;">Logout</button>
+    </div>
+
+    <script type="module" src="app.js"></script>
+
+</body>
+
+</html>
